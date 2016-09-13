@@ -8,20 +8,22 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <div class="container">
-      <p>
-        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
-      </p>
+  <h4>todo</h4>
 
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
-
-      </ul>
-
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
+  <div class="wrapper">
+    <div class="inner">
+      <form id="addForm">
+           <label for="item"></label>
+           <input id="item" type="text" placeholder="Add Item" onkeypress="return itemAdded(event);"><br>
+           <button id="submitButton" type="button">Add!</button>
+      </form>
+      <ul id="list">
       </ul>
     </div>
+    <button id="deleteAll">Delete All!</button>
+
+  </div>
+
 
   <script type="text/javascript" src="script.js"></script>
 </body>
